@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+nav {
+    max-width: 900px;
+    margin:auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover {
+    background-color: red;
+}
+
+.menu-vertical {
+    position:absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    /*background-color: black;*/
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display: block;
+    color:white;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 20px; 
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 10px;
+}
+
+
+
+.secciones img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+
+.contenido {
+    display: flex;
+    margin: 60px;
+}
+
+.articulos {
+    width: 70%;
+    border-right: 3px solid black;
+
+}
+
+.secciones {
+    display:flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.menu-secundario {
+    width: 30%;
+    margin-top: 60px;
+    align-items: center;
+
+}
+
+video  {
+    display: table;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+
+}
+
+footer p {
+    text-align: center;
+    padding: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color:white;
+    margin-top: 40px;
+}
+
+/*Para LOGO*/
+header {
+    display: flex;
+    height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    margin-right: 10px
+}
+
+.logo img {
+    height: 50px;
+}
+
+/*FIGURE*/
+
+figure {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Para vídeo*/
+
+.fondo {
+    display: grid;
+    place-items: center;
+    background-color: black;
+  }
+
+.fondo2 {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: grey;
+  }
+
+.visual {
+      height: 250px;
+      width: 100%;
+      background-color: white;
+    }
+  
+/*Para imagenes*/
+
+.contenido {
+  overflow: auto;
+  display: flex;
+ /* scroll-snap-type: x mandatory;*/
+}
+
+
+.box {
+  height: 500px;
+  width: 500px;
+  background: black;
+  /*margin-right: 5px;
+  flex-shrink: 0;
+  scroll-snap-align: start;*/
+}
+
+.box img {
+  height: 500px;
+  width: 450px;
+}
+
+
+/*SLIDES*/
+/*
+>GRID para definir una cuadrícula utilizamos el valor 
+GRID de la propiedad display, cuadricula de una sola columna
+
+>grid-auto-flow> (controla cómo funciona el algoritmo de colocación automática)
+Los artículos se colocan rellenando cada columna 
+por turnos,añadiendo nuevas columnas según sea necesario.
+
+>gap establece los espacios ( medianiles ) entre filas y columnas
+
+>REM Y EM unidades escalables que son traducidas por el navegador en valores
+ de pixeles, 
+
+>overflow-y define qué se debe mostrar cuando el contenido 
+se desborda de los extremos superior e inferior de un elemento en bloque
+>auto: Si el contenido se recorta dentro del área de padding, se vería igual 
+que con la propiedad visible, pero aún determinado por un contexto de formato 
+de bloque. Los navegadores de escritorio proveen barras de desplazamiento 
+si el contenido se desborda.
+
+> propiedad overscroll-behavior-x se utiliza para establecer el comportamiento 
+del navegador cuando se alcanza el límite horizontal de un área de desplazamiento.
+>auto: Toda la página se desplazará incluso si se alcanza el límite del elemento. 
+Es el valor predeterminado.
+
+>Scroll Snap nos permite declarar posiciones en nuestro scroll, 
+de forma que podemos controlarlo mejor, especialmente al utilizar 
+nuestros dedos para desplazarnos.
+>Mandatory:La vista de este contenedor de pergaminos se apoyará en un punto de 
+apoyo si no está actualmente desplazado.Eso significa que se ajusta 
+en ese punto cuando la acción de desplazamiento termina,
+
+>crollbar-width permite al autor establecer el grosor máximo de las barras 
+de desplazamiento de un elemento cuando se muestran.
+
+>scroll-snap-align con el valor start, de forma que le indicamos que el 
+scroll debe ajustarse al inicio de cada elemento
+
+>El contenido reemplazado está dimensionado para mantener su relación de 
+aspecto mientras se ajusta dentro del cuadro de contenido del elemento:
+ su tamaño de objeto concreto se resuelve como una restricción de contenido 
+ contra el ancho y la altura utilizados del elemento.
+
+ >::-webkit-scrollbar afecta el estilo de la barra de desplazamiento 
+ asociada a un elemento.
+*/
+
+
+
+.slides {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    /*overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: auto;*/
+}
+  
+  
+ /* .slides > img {
+    scroll-snap-align: start;
+  }*/
+  
+  
+  .slides img {
+    border-radius: 10px;
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*OTRO CAJAS*/
+/*
+ <‘grid-template-rows’> / <‘grid-template-columns’> ]
+Esto define primero las filas ( rows ) y después las columnas ( columns ) en una sola declaración.
+
+Una fracción o «fraction» (1fr) es una parte de una fila entera. Así, si se divide tu Grid 
+en 3×4 como en el ejemplo de abajo de CSS Tricks,es decir,1fr = ¼ o 25 %.
+*/
+  #grid {
+    height: 200px;
+    width: 200px;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(1, 100px) / repeat(15, 100px);
+    grid-auto-flow: column;  
+  }
+  
+  #item1 {
+    background-color: lime;
+    
+  }
+  
+  #item2 {
+    background-color: yellow;
+  }
+  
+  #item3 {
+    background-color: blue;
+  }
+  
+  #item4 {
+    
+    background-color: red;
+  }
+  
+  #item5 {
+    background-color: aqua;
+  }
+
+  #item6 {
+    background-color: lime;
+   
+  }
+  
+  #item7 {
+    background-color: yellow;
+  }
+  
+  #item8 {
+    background-color: blue;
+  }
+  
+  #item9 {
+    
+    background-color: red;
+  }
+  
+  #item10 {
+    background-color: aqua;
+  }
+  #item11 {
+    background-color: lime;
+    
+  }
+  
+  #item12 {
+    background-color: yellow;
+  }
+  
+  #item13 {
+    background-color: blue;
+  }
+  
+  #item14 {
+    
+    background-color: red;
+  }
+  
+  #item15 {
+    background-color: aqua;
+  }
+  
+  
+  
+

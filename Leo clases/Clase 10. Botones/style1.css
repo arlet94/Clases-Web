@@ -1,0 +1,68 @@
+/*
+>> text-transform: especifica el cambio entre mayúsculas y minúsculas 
+del texto de un elemento. Puede ser usada para que un texto aparezca
+ completamente en mayúsculas, en minúsculas, o con la primera letra 
+de cada palabra en mayúscula.
+   uppercase
+Es una palabra clave que fuerza a todos los caracteres a ser convertidos
+a mayúsculas.
+   lowercase
+Es una palabra clave que fuerza a todos los caracteres a ser convertidos 
+a minúsculas.
+none
+
+
+ >> transition : es una propiedad abreviada de transition-property,
+transition-duration, transition-timing-function (en-US), y
+transition-delay. Permite definir la transición entre dos estados
+de un elemento. Fuente: https://developer.mozilla.org/es/docs/Web/CSS/transition
+
+>> outline: https://developer.mozilla.org/es/docs/Web/CSS/outline
+
+>>Transform : te permite modificar el espacio de coordenadas del modelo de 
+formato visual CSS. Usándola, los elementos pueden ser trasladados, rotados,
+ escalados o sesgados de acuerdo a los valores establecidos.
+ fuente:https://developer.mozilla.org/es/docs/Web/CSS/transform
+
+
+
+*/
+
+body {
+  background-color: white;
+}
+button {
+    padding: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: 1rem solid;
+  }
+  
+  button:hover {
+    background-color:red;
+    box-shadow: gray;
+    color: white;
+    transform: translateY(-7px);
+  }
+
+  /*
+  >>:active representa un elemento (como un botón) que el usuario está activando.
+   Cuando se usa un mouse, la "activación" generalmente comienza cuando 
+   el usuario presiona el botón primario del mouse y termina cuando se 
+   suelta. La pseudo-clase :active se usa comúnmente en los elementos 
+   <a> y <button>, 
+  
+  */
+
+  button:active {
+    transform: translateY(-1px);
+  }
+  

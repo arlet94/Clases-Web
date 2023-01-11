@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 20px; 
+}
+
+
+nav ul {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display:inline-flex;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover {
+    background-color:brown;
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+
+.contenido {
+    display: flex;
+    margin: 60px;
+}
+
+.articulos {
+    width: 70%;
+    border-right: 3px solid black;
+
+}
+
+.secciones {
+    display:flex;
+    align-items: center;
+    padding: 90px;
+    
+}
+
+.menu-secundario {
+    width: 30%;
+    margin-top: 60px;
+    align-items: center;
+
+}
+
+/*FALTA h3, figure, footer y footer p*/
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 5px;
+}
+
+figure {
+    display: table; margin: 0 auto;
+    text-align: center;
+}
+
+
+video {
+    display: table; margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    
+}
+
+footer p {
+    text-align: center;
+    padding: 50px;
+}
+
+/*PARA LOGO
+justify-content se separe */
+header {
+    display:flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+
+
+/*
+Hasta el final
+
+@media (max-width:2000px){
+    header{
+        flex-direction: column;
+    }
+}
+*/
+
+
+

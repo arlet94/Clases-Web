@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body{
+    background-image: url(./huellas.jpg);
+    /*background-size: cover;*/
+}
+
+nav {
+    max-width: 900px;
+    margin:auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color:white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+    background-color: red;
+}
+
+.menu-vertical{
+    position:absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+    /*background-color: rgba(0, 0, 0, .5);*/
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display:block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 20px; 
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+
+.contenido {
+    display: flex;
+    margin: 60px;
+}
+
+.articulos {
+    width: 70%;
+    border-right: 3px solid black;
+
+}
+
+.secciones {
+    display:flex;
+    align-items: center;
+    padding: 90px;
+    
+}
+
+.menu-secundario {
+    width: 30%;
+    margin-top: 60px;
+    align-items: center;
+
+}
+
+/*FALTA h3, figure, footer y footer p*/
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 5px;
+}
+
+figure {
+    display: table; margin: 0 auto;
+    text-align: center;
+}
+
+
+video {
+    display: table; margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    
+}
+
+footer p {
+    text-align: center;
+    padding: 50px;
+}
+
+/*PARA LOGO
+justify-content se separe */
+header {
+    display:flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo img{
+    height: 50px;
+}
